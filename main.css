@@ -45,6 +45,12 @@ a {
     font-weight: 600;
     font-size: 1rem;
 }
+.link {
+    color: #0e6ba8;
+}
+.link:hover {
+    color: white;
+}
 main {
     text-align: center;
     padding: 0px;
@@ -74,17 +80,24 @@ p {
     width: 40%;
 }
 .section {
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
     height: 100%;
     background: linear-gradient(to top, #0e6aa8b0, #0e6ba8);
 }
 .p-section {
-    font-size: 25px;
+    font-size: 2rem;
+    font-weight: 800;
     text-align: center;
     color: white;
-    padding: 130px 90px;
+    padding: 130px 90px 0;
+}
+.p-section2 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    padding: 50px 90px 130px;
 }
 .columnas {
     display: flex;
@@ -165,3 +178,5 @@ footer {
     cursor: pointer;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.658);
 }
+
+
