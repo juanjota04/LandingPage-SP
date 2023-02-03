@@ -1,0 +1,167 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    width: 100%;
+}
+.logo {
+    height: 70px;
+    margin-right: 20px;
+    padding: 0 200px;
+}
+.logo:hover {
+    cursor: pointer;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+nav li:last-child {
+    margin-right: 100px;
+}
+nav li:hover {
+    cursor: pointer;
+    background-color: #0e6ba8;
+    color: white;
+}
+a {
+    font-weight: 600;
+    font-size: 1rem;
+}
+main {
+    text-align: center;
+    padding: 0px;
+  /* min-height: calc(100% - 20px); */
+}
+p {
+    text-align: center;
+}
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    width: 50%;
+    height: 80%;
+    text-align: center;
+    margin: auto;
+}
+.content {
+    display: flex;
+}
+.text-content {
+    width: 60%;
+    padding-right: 20px;
+}
+.mainimg {
+    width: 40%;
+}
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(to top, #0e6aa8b0, #0e6ba8);
+}
+.p-section {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    padding: 130px 90px;
+}
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 100px;
+}
+.colum {
+    width: 30%;
+    background: linear-gradient(to top, #0e6aa8b0, #0e6ba8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.658);
+    margin: 20px 0;
+    color: white;
+}
+.ventajas {
+    padding: 100px 0 50px;
+}
+.boton-inicia {
+    background: linear-gradient(to top, #0e6aa8b0, #0e6ba8);
+}
+.content-cal {
+    display: grid;
+    justify-items: center;
+    padding: 50px 0;
+}
+.calendario {
+    padding: 30px 0;
+}
+.texto-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    width: 100%;
+    height: 80%;
+    padding: 0 100px;
+    text-align: center;
+    margin: auto;
+}
+h3 {
+    padding: 50px 0 10px;
+    color: white;
+    font-size: 1.8rem;
+}
+h4 {
+    padding: 10px 0 50px;
+    color: white;
+    font-size: 1.5rem;
+}
+footer {
+    display: grid;
+    position: relative;
+    width: 100%;
+}
+.footer {
+    padding: 10px;
+    margin: auto;
+}
+.cta-button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #0e6ba8;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.658);
+}
+.button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: white;
+    color: #0e6ba8;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.658);
+}
