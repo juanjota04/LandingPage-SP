@@ -45,11 +45,32 @@ a {
     font-weight: 600;
     font-size: 1rem;
 }
-.link {
+li:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+li:last-child {
+    padding: 0 10px;
+    background-color: #0e6ba8;
+    border-radius: 25px;
+    border: transparent;
+}
+li:last-child:hover {
+    background-color: white;
+    border: 1px solid #0e6ba8;
     color: #0e6ba8;
+    cursor: pointer;
+}
+.link {
+    color: white;
+    text-decoration: none;
 }
 .link:hover {
-    color: white;
+    background-color: white;
+    color: #0e6ba8;
+    cursor: pointer;
 }
 main {
     text-align: center;
@@ -63,7 +84,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    font-weight: 1000;
     width: 50%;
     height: 80%;
     text-align: center;
