@@ -4,63 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=h1, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>SimplyPro</title>
     <link href="./images/logo.png" rel="icon">
+    <title>SimplyPro</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 600px)"/>
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 800px)"/>
 </head>
 <body>
-    <nav>
-        <img src="./images/logo.495c9e03.png" alt="Logo" class="logo" href="./index.html">
-        <ul>
-            <li><a>Inicio</a></li>
-            <li><a>Haz Tú Declaración</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Contacto</a></li>
-            <li><a class="link" href="https://muisca.dian.gov.co/WebArquitectura/DefLogin.faces">Ir a la DIAN</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div class="content">
-            <div class="text-content">
-                <h1 class="texto">Presenta tú declaración de renta en línea de manera fácil, rápida y segura! Y lo mejor, lo haces tú mismo!!</h1>
-                <button class="cta-button">Comienza aquí</button>
-            </div>
-            <img src="./images/mainimg.png" alt="Mi imagen" class="mainimg">
+    <nav class="navbar">
+        <div
+            class="navbar-overlay"
+            onclick="menuOpen()"
+        >
         </div>
-        <section class="section">
-            <p class="p-section">No comas cuento, declarar renta no es tan complicado como te lo hacen ver</p>
-            <p class="p-section2">Con SimplyPro sólo debes responder una serie de preguntas sencillas y en cuestión de minutos tendrás lista tú declaración !</p>
+        <button
+            type="button"
+            class="navbar-burger"
+            onclick="menuOpen()"
+        >
+            <img src="./images/menu.svg" alt="menu"/>
+        </button>
+        <img src="./images/logo.495c9e03.png" alt="Logo" class="logo" href="./index.html">
+        <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+        </label>
+        <nav class="menu">
+            <button class="menu-bt">Inicio</button>
+            <button class="menu-bt">Haz Tú Declaración</button>
+            <button class="menu-bt">Blog</button>
+            <button class="menu-bt">Contacto</button>
+            <button class="link" href="https://muisca.dian.gov.co/WebArquitectura/DefLogin.faces">Ir a la DIAN</button>
+        </nav>
+    </nav>
+    <main class="container">
+        <section class="section-1">
+            <div class="text-bt">
+                <h1 class="texto">Presenta tú declaración de renta en línea de manera fácil, rápida y segura. Y lo mejor, lo haces tú mismo.</h1>
+                <button class="s1-but">Comienza aquí</button>
+            </div>
+            <img src="./images/pctrans.svg" alt="portatil" class="pc">
         </section>
-        <div class="container">
+        <section class="section-2">
+            <p class="p-section">No comas cuento, declarar renta es más simple de lo que crees</p>
+            <p class="p-section2">Con SimplyPro, sólo debes responder una serie de preguntas sencillas y en cuestión de minutos tendrás lista tú declaración</p>
+        </section>
+        <div class="section-3">
             <h1 class="ventajas">Ventajas de hacer tu declaración de renta con SimplyPro</h1>
-            <section class="columnas">
-                <div class="colum">
+            <section class="boxes">
+                <div class="box">
+                    <img src="./images/cerdito.png" alt="cerdito" class="cerdito">
                     <h2>Ahorra dinero! </h2>
                     <p>Por tan solo $100.000 COP tienes todas las herramientas necesarias para realizar de inicio a fin tú declaración de renta</p>
                 </div>
-                <div class="colum">
+                <div class="box">
+                    <img src="./images/reloj.png" alt="reloj" class="reloj">
                     <h2>Tú declaración a un click!</h2>
                     <p>Puedes completar el proceso en menos de una hora dependiendo de tú perfil</p>
                 </div>
-                <div class="colum">
+                <div class="box">
+                    <img src="./images/candado.png" class="candado"/>
                     <h2>100% seguro</h2>
                     <p>Con nuestro algoritmo no vas a encontrar error! Esta completamente optimizado conforme a la legislación vigente para que obtengas el menor valor a pagar</p>
                 </div>
             </section>
-            <section class="boton-inicia">
-                <h3>Realiza tú declaración de renta del año 2022 con SimplyPro</h3>
-                <button class="button">Comienza aquí</button>
-                <h4>Rápido, fácil y seguro</h4>
-            </section>
         </div>
-        <div class="content-cal">
+        <section class="section-4">
+            <h3>Realiza tú declaración de renta del año 2022 con SimplyPro</h3>
+            <button class="button">Comienza aquí</button>
+            <h4>Rápido, fácil y seguro</h4>
+        </section>
+        <section class="section-5">
             <div class="content">
                 <h1 class="texto-content">Revisa tú fecha para declarar renta</h1>
             </div>
             <div class="calendario">
                 <img src="./images/calendario.jpg" alt="Mi imagen" class="calendario">
             </div>
+        </section>
+        <div id="form">
+            <form action="" method="post">
+                <h1 id="contact">Contáctanos para más información</h1>
+                <div id="name">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div id="mail">
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <input type="submit" value="Enviar" id="send">
+            </form>
         </div>
     </main>
     <footer>

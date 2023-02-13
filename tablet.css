@@ -1,0 +1,20 @@
+@media only screen and (min-width: 600px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 0 0 16px;
+    }
+    .navbar-overlay {
+        display: none;
+    }
+    .navbar-burger {
+        display: none;
+    }
+    .menu {
+        position: static;
+        translate: 0 0;
+        width: auto;
+        background: transparent;
+        flex-direction: row;
+        visibility: visible;
+    }
+}
